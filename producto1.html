@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <link rel="stylesheet" href="producto1.css">
+    
+     <script defer src="producto1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <header>
+        <nav class="nav">
+         
+            <div class="ful__img" id="fulImgBox">
+    
+                <div class="nav__links">
+                    <a href="index.html">Inicio</a>
+                    <a href="">Productos</a>
+                    <a href="">Ayuda</a>
+                </div>
+    
+                <span class="cerrar" onclick="closeImg()">X</span>
+           </div>
+                
+                  
+           <div class="navegacion__container">
+                   <h2>Nike</h2>  
+    
+                   <div class="links__two">
+                    <a href="index.html">Inicio</a>
+                    <a href="">Productos</a>
+                    <a href="">Ayuda</a>
+                    <!-- <a class="cta" href="">Comenzar</a>     -->
+                   </div>  
+    
+    
+                   <img class="close" src="img/menu-hamburguer.svg" onclick="openImg(this.src)" >
+    
+               </div>
+    
+    </nav>
+       </header>
+
+
+
+
+
+
+
+
+
+
+
+
+       <section class="product__pricipal">
+
+        <h2 class="title__principal">Remera Negra</h2>
+        <main>
+ 
+         <div class="container__imgs">
+              
+             <div class="container__img">
+                 <img class="main__img" src="img/zapa2.jpg" alt="">
+             </div>
+         
+             <div class="thumbnail__container">
+                 <img class="thumbnail active" src="img/zapa.jpg" alt="">
+                 <img class="thumbnail" src="img/zapa2.jpg" alt="" >
+                 <img class="thumbnail" src="img/zapa3.jpg" alt="">
+                 <img class="thumbnail" src="img/zapa4.jpg" alt="">
+         
+               </div>
+         
+             </div>
+         
+         
+         
+             <div class="container__info__product">
+         
+                 <div class="container__price">
+                     <span>$44.000,00</span>
+                     <img src="img/flecha avajo.svg" alt="">
+                 </div>
+         
+                 <div class="container__details__product">
+         
+                     <div class="form__group">
+                          <label for="colour">colores</label>
+                          <select name="colour" id="">
+                             <option disabled value="">colores disponibles</option>
+                             <option  value="rojo">rojo</option>
+                             <option value="blanco">blaco</option>
+                             <option value="negro">negro</option>
+                             <option value="azul">azul</option>
+                             <option value="verde">verde</option>
+                             <option value="gris">gris</option>
+                          </select>
+                     </div>
+         
+         
+                     <div class="form__group">
+                         <label for="talle">talles</label>
+                         <select name="size" id="">
+                            <option disabled value="">talles disponibles</option>
+                            <option value="40">40</option>
+                            <option value="42">42</option>
+                            <option value="44">44</option>
+                            <option value="46">46</option>
+                            <option value="48">48</option>
+                            <option value="50">50</option>
+                            <option value="52">52</option>
+                         </select>
+                    </div>
+         
+                 </div>
+         
+         
+                 <!-- <div class="container__add__card">
+                         
+                     <button class="btn__add">
+                           <img src="img/signo mas.svg" alt="">
+                           Pedir YA
+                     </button>
+                     
+                 </div> -->
+         
+         
+                 <div class="container__descriptions">
+                     
+                     <div class="title__description">
+                           <h4>descripcion</h4>
+                           <img src="img/flecha avajo.svg" alt="">
+                       </div>
+         
+         
+                       <div class="text__descriptions ">
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ipsum quo aspernatur eaque repellat, porro laboriosam odio quod dolore voluptate, placeat voluptatibus, maxime quaerat eligendi omnis amet pariatur quis consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor laudantium, ducimus nihil minima quos temporibus iusto excepturi animi! Iure reiciendis nulla cupiditate, veniam repudiandae harum soluta magni magnam iste.</p>
+                       </div>
+                     
+                 </div>
+         
+                 <div class="container__additional">
+         
+                     <div class="title__additional">
+                        <h4>informacion adicional</h4>
+                        <img src="img/flecha avajo.svg" alt="">
+                     </div>
+         
+                     <div class="text__additional hidden">
+                         <p>------------------- </p>
+                     </div>
+                     
+                 </div>
+         
+         
+         
+                 <div class="container__reviews">
+         
+                     <div class="title__reviews">
+                        <h4>reseñas</h4>
+                        <img src="img/flecha avajo.svg" alt="">
+                     </div>
+         
+                     <div class="text__reviews hidden">
+                         <p>-------------------</p>
+                     </div>
+                     
+                 </div>
+         
+         
+                 <div class="container__social">
+                     <span>compartir</span>
+                     <div class="container__button">
+                         <a href=""><img src="img/instagram.svg" alt=""></a>
+                         <!-- <a href=""><img src="img/facebook.svg" alt=""></a>
+                         <a href=""><img src="img/youtube.svg" alt=""></a>
+                         <a href=""><img src="img/tiktok.svg" alt=""></a>
+                         <a href=""><img src="img/linkedin.svg" alt=""></a> -->
+                     </div>
+                 </div>
+         
+         
+                 <div class="container__add__card">
+                         
+                     <button class="btn__add">
+                      <a href="https://wa.link/j6xp3l">
+                          <img src="img/whatsapp.svg" alt="">
+                          Pedir YA
+
+                      </a>
+                                             
+                     </button>
+                     
+                 </div>
+         
+             </div>
+         </main>
+         
+ 
+    </section>
+
+
+
+
+
+
+
+
+    <section class="container__related">
+        <h2>productos relacionados</h2>
+    
+        <div class="card__list">
+    
+            <div class="card">
+    
+                <div class="card__img">
+                  <a href="about.html">   <img src="img/zapa.jpg" alt="">  </a>
+                </div>
+    
+                <div class="info__card">
+                     <div class="text__product">
+                         <h3>nike  - roshe run</h3>
+                         <p class="category">footwer, sneakers</p>
+                     </div>
+    
+                     <div class="price">$85.00</div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="card">
+    
+                <div class="card__img">
+                     <img src="img/zapa6.jpg" alt="">
+                </div>
+    
+                <div class="info__card">
+                     <div class="text__product">
+                         <h3>nike  - roshe run</h3>
+                         <p class="category">footwer, sneakers</p>
+                     </div>
+    
+                     <div class="price">$85.00</div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="card">
+    
+                <div class="card__img">
+                     <img src="img/zapa5.jpg" alt="">
+                </div>
+    
+                <div class="info__card">
+                     <div class="text__product">
+                         <h3>nike  - roshe run</h3>
+                         <p class="category">footwer, sneakers</p>
+                     </div>
+    
+                     <div class="price">$85.00</div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="card">
+    
+                <div class="card__img">
+                     <img src="img/zapa2.jpg" alt="">
+                </div>
+    
+                <div class="info__card">
+                     <div class="text__product">
+                         <h3>nike  - roshe run</h3>
+                         <p class="category">footwer, sneakers</p>
+                     </div>
+    
+                     <div class="price">$85.00</div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+
+
+    <footer class="footer">
+
+        <div class="social__red">
+            <h3>Redes Sociales</h3>
+            <a href=""><img src="img/instagram.svg" alt=""></a>
+        </div>
+        
+            <div class="copy">
+                <p>&copy; 2024 Tienda de Zapatillas. Todos los derechos reservados.</p>
+            </div>
+    
+       </footer>
+    
+
+    
+</body>
+</html>

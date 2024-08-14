@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+    
+    <script defer src="java.js"></script>
+    <title>pagina</title>
+
+
+</head>
+<body>
+
+
+
+   <header>
+    <nav class="nav">
+     
+        <div class="ful__img" id="fulImgBox">
+
+            <div class="nav__links">
+                <a href="index.html">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="">Ayuda</a>
+            </div>
+
+            <span class="cerrar" onclick="closeImg()">X</span>
+       </div>
+            
+              
+       <div class="navegacion__container">
+               <h2>Nike</h2>  
+
+               <div class="links__two">
+                <a href="index.html">Inicio</a>
+                <a href="#productoss">Productos</a>
+                <a href="">Ayuda</a>
+                <!-- <a class="cta" href="">Comenzar</a>     -->
+               </div>  
+
+
+               <img class="close" src="img/menu-hamburguer.svg" onclick="openImg(this.src)" >
+
+           </div>
+
+</nav>
+   </header>
+
+
+
+
+   <!-- <section class="container__section">
+
+     <div class="conatiner__box">
+
+        <div class="box sacar">
+            <img src="img/remeras5.jpg" alt="">
+        </div>
+
+        <div class="box sacar">
+            <img src="img/remeras7.jpg" alt="">
+        </div>
+            
+        <div class="box sacar">
+            <img src="img/remeras6.jpg" alt="">
+        </div>
+
+
+     </div>
+
+   </section> -->
+
+
+
+
+
+
+
+   <div class="container__carousel">
+        
+    <div class="carrusel" id="slider">
+
+       <div class="slider__section">
+            <img loading="lazy" src="img/remeras5.jpg" alt="">
+       </div>   
+
+       <div class="slider__section">
+           <img loading="lazy" src="img/remeras 8.jpg" alt="">
+       </div>
+
+       <div class="slider__section">
+            <img loading="lazy" src="img/remeras6.jpg" alt="">
+       </div>     
+
+    </div>
+
+    <div class="btn__left"><</div>
+    <div class="btn__right">></div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="pagos">
+
+    <div class="pagos__container">
+
+      <div class="box__pagos">
+          <figure class="box__img">
+            <img src="img/auto-envio.png" alt="">
+          </figure>
+          <div class="pago__txt">
+             <h2>Envios a Domicilio</h2>
+             <p>Envios via por Correo Argentino,seguros  </p>
+          </div>
+      </div>
+
+      <div class="box__pagos borrar">
+        <figure class="box__img">
+          <img src="img/dinero.png" alt="">
+        </figure>
+        <div class="pago__txt">
+           <h2>Transferencia Bancaria</h2>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+
+
+    <div class="box__pagos borrar">
+        <figure class="box__img">
+          <img src="img/targeta.png" alt="">
+        </figure>
+        <div class="pago__txt">
+           <h2>Medios de pago</h2>
+           <p>Mercado Pago </p>
+        </div>
+    </div>
+
+    <div class="box__pagos borrar">
+        <figure class="box__img">
+          <img src="img/check.png" alt="">
+        </figure>
+        <div class="pago__txt">
+           <h2>Compra Segura</h2>
+           <p>Nos encargamos de que tu producto llega a la puerta de tu casa. </p>
+        </div>
+    </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<section class="txt__bible">
+    <p>Filipenses 4:13 Todo lo puedo en cristo que me fortalece</p>
+</section>
+
+
+
+
+
+
+   <section class="product__pricipal">
+
+       <h2 class="title__principal">Producto Top</h2>
+       <main>
+
+        <div class="container__imgs">
+             
+            <div class="container__img">
+                <img class="main__img" src="img/zapa2.jpg" alt="">
+            </div>
+        
+            <div class="thumbnail__container">
+                <img class="thumbnail active" src="img/zapa.jpg" alt="">
+                <img class="thumbnail" src="img/zapa2.jpg" alt="" >
+                <img class="thumbnail" src="img/zapa3.jpg" alt="">
+                <img class="thumbnail" src="img/zapa4.jpg" alt="">
+        
+              </div>
+        
+            </div>
+        
+        
+        
+            <div class="container__info__product">
+        
+                <div class="container__price">
+                    <span>$25.000,00</span>
+                    <img src="img/money-2.svg" alt="">
+                </div>
+        
+                <div class="container__details__product">
+        
+                    <div class="form__group">
+                         <label for="colour">colores</label>
+                         <select name="colour" id="">
+                            <option disabled value="">colores disponibles</option>
+                            <option  value="rojo">rojo</option>
+                            <option value="blanco">blaco</option>
+                            <option value="negro">negro</option>
+                            <option value="azul">azul</option>
+                            <option value="verde">verde</option>
+                            <option value="gris">gris</option>
+                         </select>
+                    </div>
+        
+        
+                    <div class="form__group">
+                        <label for="talle">talles</label>
+                        <select name="size" id="">
+                           <option disabled value="">talles disponibles</option>
+                           <option value="40">40</option>
+                           <option value="42">42</option>
+                           <option value="44">44</option>
+                           <option value="46">46</option>
+                           <option value="48">48</option>
+                           <option value="50">50</option>
+                           <option value="52">52</option>
+                        </select>
+                   </div>
+        
+                </div>
+        
+        
+                <!-- <div class="container__add__card">
+                        
+                    <button class="btn__add">
+                          <img src="img/signo mas.svg" alt="">
+                          Pedir YA
+                    </button>
+                    
+                </div> -->
+        
+        
+                <div class="container__descriptions">
+                    
+                    <div class="title__description">
+                          <h4>descripcion</h4>
+                          <img src="img/flecha avajo.svg" alt="">
+                      </div>
+        
+        
+                      <div class="text__descriptions ">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ipsum quo aspernatur eaque repellat, porro laboriosam odio quod dolore voluptate, placeat voluptatibus, maxime quaerat eligendi omnis amet pariatur quis consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor laudantium, ducimus nihil minima quos temporibus iusto excepturi animi! Iure reiciendis nulla cupiditate, veniam repudiandae harum soluta magni magnam iste.</p>
+                      </div>
+                    
+                </div>
+        
+                <div class="container__additional">
+        
+                    <div class="title__additional">
+                       <h4>informacion adicional</h4>
+                       <img src="img/flecha avajo.svg" alt="">
+                    </div>
+        
+                    <div class="text__additional hidden">
+                        <p>------------------- </p>
+                    </div>
+                    
+                </div>
+        
+        
+        
+                <div class="container__reviews">
+        
+                    <div class="title__reviews">
+                       <h4>reseñas</h4>
+                       <img src="img/flecha avajo.svg" alt="">
+                    </div>
+        
+                    <div class="text__reviews hidden">
+                        <p>-------------------</p>
+                    </div>
+                    
+                </div>
+        
+        
+                <div class="container__social">
+                    <span>compartir</span>
+                    <div class="container__button">
+                        <a href=""><img src="img/instagram.svg" alt=""></a>
+                        <!-- <a href=""><img src="img/facebook.svg" alt=""></a>
+                        <a href=""><img src="img/youtube.svg" alt=""></a>
+                        <a href=""><img src="img/tiktok.svg" alt=""></a>
+                        <a href=""><img src="img/linkedin.svg" alt=""></a> -->
+                    </div>
+                </div>
+        
+        
+                <div class="container__add__card">
+                        
+                    <button class="btn__add">
+                          <img src="img/whatsapp.svg" alt="">
+                          Pedir YA
+                    </button>
+                    
+                </div>
+        
+            </div>
+        </main>
+        
+
+   </section>
+
+
+
+
+
+   <section id="productoss" class="pricipal__products">
+       <h2 class="title__products">RESERVA AHORA!</h2>
+       
+       <div class="container__products">
+
+        <div class="product">
+   
+                 <a href="producto1.html">
+                <img src="img/remeras3.jpg" alt="">
+            </a>
+
+        
+            <div class="product__txt">
+                <h2>Remeras clasica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="price">PRECIO: 1000$</p>
+                <div class="box__links">
+                    <a class="whatsapp" id="compra__mp" href="https://wa.link/excrsw"> <img src="img/whatsapp.svg" alt=""> Comprar</a>
+                    <a href="producto1.html">Ver</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+       
+                <a href="producto1.html">
+                    <img src="img/remeras3.jpg" alt="">
+                </a>
+       
+            <div class="product__txt">
+                <h2>Remeras clasica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="price" >PRECIO: 1000$</p>
+                <div class="box__links">
+                    <a class="whatsapp" id="compra__mp" href="https://wa.link/excrsw"> <img src="img/whatsapp.svg" alt=""> Comprar</a>
+                    <a href="producto2.html">Ver</a>
+
+                </div>
+            </div>
+
+
+        </div><div class="product">
+         
+                <a href="producto1.html">
+                    <img src="img/remeras3.jpg" alt="">
+                </a>          
+            <div class="product__txt">
+                <h2>Remeras clasica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="price">PRECIO: 1000$</p>
+                <div class="box__links">
+                    <a class="whatsapp" id="compra__mp" href="https://wa.link/excrsw"> <img src="img/whatsapp.svg" alt=""> Comprar</a>
+                    <a href="producto1.html">Ver</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+           
+                <a href="producto1.html">
+                    <img src="img/remeras3.jpg" alt="">
+                </a>           
+            <div class="product__txt">
+                <h2>Remeras clasica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="price">PRECIO: 1000$</p>
+                <div class="box__links">
+                    <a class="whatsapp" id="compra__mp" href="https://wa.link/excrsw"> <img src="img/whatsapp.svg" alt=""> Comprar</a>
+                    <a href="producto1.html">Ver</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+         
+                <a href="producto1.html">
+                    <img src="img/remeras3.jpg" alt="">
+                </a>
+                       
+            <div class="product__txt">
+                <h2>Remeras clasica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="price" >PRECIO: 1000$</p>
+                <div class="box__links">
+                    <a class="whatsapp" id="compra__mp" href="https://wa.link/excrsw"> <img src="img/whatsapp.svg" alt=""> Comprar</a>
+                    <a href="producto1.html">Ver</a>
+
+                </div>
+            </div>
+
+
+        </div><div class="product">
+           
+                <a href="producto1.html">
+                    <img src="img/remeras3.jpg" alt="">
+                </a>
+            <div class="product__txt">
+                <h2>Remeras clasica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="price">PRECIO: 1000$</p>
+                <div class="box__links">
+                    <a class="whatsapp" id="compra__mp" href="https://wa.link/excrsw"> <img src="img/whatsapp.svg" alt=""> Comprar</a>
+                    <a href="producto1.html">Ver</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   </section>
+
+
+
+
+
+
+
+   <footer class="footer">
+
+    <div class="social__red">
+        <h3>Redes Sociales</h3>
+        <a href=""><img src="img/instagram.svg" alt=""></a>
+    </div>
+    
+        <div class="copy">
+            <p>&copy; 2024 Tienda de Zapatillas. Todos los derechos reservados.</p>
+        </div>
+
+   </footer>
+
+
+
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
